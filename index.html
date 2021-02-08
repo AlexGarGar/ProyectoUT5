@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayViciones</title>
+    <link rel="stylesheet" type="text/css" href="estiloViciones.css">
+</head>
+<html>
+<body>
+    <img src="C:\Users\alumno2021\Desktop\Prueba Inicial HTML\LogoViciones.png" alt="" class="imagencentrada">
+    <h1 class="h1Titulo">Bienvenido a PlayVicios</h1>
+    <p class="textoPrincipal"><em><strong> Un sitio web, en el cual podrás encontrar los últimos juegos y las últimas noticias relacionadas con todo el mundo Gamer, dentro de Playstation. Juegos, últimas novedades, nuevos accesorios, así como reviews de nuestros expertos. Adentrate en nuestro mundo y visita todas nuestras categorías... ¡Te Sorprenderas!</strong></em></p> <br> <br> <br>
+<form action="" method="post" class="formularioLogIn">
+    <h2 class="h2cat">Log In del Usuario</h2>
+    Nombre de Usuario: <input type="text" name="Usuario" id="Usuario"> <br>
+    Contraseña: <input type="password" name="Clave" id="Clave"> <br> <br>
+    <input type="submit" value="Log In">
+    <input type="reset" value="Resetear">
+</form> <br> <br> <br> <br> <br>
+    <ul class="listaCat">
+        <h2 class="h2cat">Categorías</h2>
+        <a href="noticias.html" target="_blank"><li>Noticias</li></a>
+        <a href="ps4.html" target="_blank"><li>Playstation 4</li></a>
+        <a href="ps5.html" target="_blank"><li>Playstation 5</li></a>
+        <a href="contactanos.html" target="_blank"><li>Contactanos</li></a>
+    </ul>
+
+<h2 class="h2cat"><em>PRESENTACIÓN DE LA NUEVA PLAYSTATION 5</em></h2> 
+<video width="320" height="240" controls>
+<source src="C:\Users\alumno2021\Desktop\Prueba Inicial HTML\PS5+Hardware+Reveal+Trailer.mp4" type="video/mp4">
+</video>
+
+    <form action="" method="post" class="formuJuego">
+        <h2 class="h2cat">Últimos lanzamientos de Videojuegos</h2> <br> <br> <br> <br> <br>
+        Nombre del videojuego: <input type="text" name="Videojuego" id="Videojuego"> <br> <br>
+        Fecha de lanzamiento: <input type="date" name="Fecha" id="Fecha"> <br> <br>
+        Tipo de plataforma: <br> <br> 
+        <input type="checkbox" name="PS4" id="PS4"><li>Playstation 4</li> 
+        <input type="checkbox" name="PS5" id="PS5"><li> Playstation 5</li> 
+        <input type="checkbox" name="XBOX One" id="XBOX One"><li> XBOX One</li> 
+        <input type="checkbox" name="XBOX S" id="XBOX S"><li> XBOX S</li> 
+        <br> <br>
+        Categoría del Videojuego: <select name="categoria" id="categoria">
+            <option value="Accion">Acción </option>
+            <option value="Deportes">Deportes </option>
+            <option value="Fantasia">Fantasia </option>
+            <option value="Simulacion">Simulación </option>
+            <option value="MMO-RPG">MMO-RPG </option>
+            <option value="Historico">Historico </option> </select>
+            <br> <br>
+        ¿Estará Disponible para PC?
+        <input type="radio" name="decision" value="Si" checked="checked">Si
+        <input type="radio" name="decision" value="No">No <br> <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Resetear">
+        
+
+    </form>
+
+</body>
+</html>

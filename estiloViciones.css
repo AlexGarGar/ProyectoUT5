@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(117, 117, 117);
+    color: rgb(148, 148, 148);
+    font-family: Arial;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+p{
+    color: rgb(226, 226, 226);
+}
+
+.formularioLogIn{
+    color: rgb(0, 0, 0);
+    border: groove 10px;
+    border-color: rgb(245, 141, 6);
+    background:rgb(150, 150, 150);
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    display:block;
+    margin:auto;
+    
+}
+
+.parraforesumen{
+    background-color: rgb(49, 49, 49);
+    border: rgb(148, 148, 148);
+    border-style: groove;
+    color: rgb(27, 151, 253);
+}
+
+.palabraEspecial{
+    color: goldenrod;
+    font-weight: bold;
+
+}
+.textoPrincipal{
+    text-align: center;
+    padding: 1em;
+    border:groove rgb(245, 141, 6) 5px;
+    background-color: rgb(26, 26, 26);
+    color:rgb(27, 151, 253)
+    
+
+}
+.imagencentrada{
+    display:block;
+    margin:auto;
+}
+
+.listaCat{
+    border:solid rgb(245, 141, 6) 3px;
+    width: 130px;
+    color: rgb(226, 226, 226);
+    background-color:rgb(0, 81, 255);
+    padding: 5px;
+    margin: 5px;
+    width: 10em;
+    list-style: none;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+
+}
+
+.h2cat{
+    text-align: left;
+    color: rgb(226, 226, 226);
+    height: 20px;
+    text-shadow: 2px 2px rgb(26, 26, 26);
+    text-align: center;
+}
+
+li a:hover{
+    background: rgb(26, 26, 26);
+}
+
+li a:active{
+    background: white;
+}
+
+li a:visited{
+    background: rgb(255, 0, 0);
+}
+
+.h1Titulo{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px rgb(26, 26, 26);    
+}
+
+video{
+    margin:auto;
+    display:block;
+
+}
+
+.formuJuego{
+    border:groove rgb(245, 141, 6) 3px;
+    width: 130px;
+    color: rgb(226, 226, 226);
+    background-color:rgb(0, 81, 255);
+    padding: 5px;
+    margin: 5px;
+    width: 10em;
+    list-style: none;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 500px;
+    text-align: center;
+}
