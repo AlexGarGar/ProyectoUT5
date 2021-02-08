@@ -1,0 +1,130 @@
+/* 1 SELECTOR UNIVERSAL */
+
+*{
+	margin: 5px;
+	padding: 3px;
+}
+
+
+/****************************************/
+/* 2 SELECTOR DE TIPO O ETIQUETA */
+
+}
+
+body {
+	padding-left: 15em;
+	font-family: Arial;
+	color: rgb(255, 255, 255);
+	background-color: #012058; 
+}
+
+h1 {
+	font-family: "Comic Sans Ms"; 
+	text-shadow: 2px 2px #000000; // css3
+}
+
+img {margin-left: 780px; float: block;}
+
+p {
+	padding:10px 10px 10px 10px;
+	margin-right: 10em;
+	margin-left: 10em;
+	background: rgb(0, 0, 0); 
+	color: rgb(255, 255, 255); 
+	font-family: Arial;
+	border: solid rgb(255, 177, 7) 5px;
+}
+  
+
+ul {
+      padding: 5px;
+      margin: 5px;
+	  width: 10em;
+      list-style: none;
+      background: #888388;	
+      position:absolute;
+      left:10px;
+      top:10px;		
+}
+a {
+	color:#ffffff;
+}
+
+a:hover {
+	color: rgb(255, 177, 7);
+
+}
+
+a:active {
+	color: rgb(0, 0, 0);
+}
+li {
+	border-top: 2px solid #ffffff;
+}
+
+/****************************************/
+/* 3 SELECTORES DESCENDENTES */
+
+li a {
+	padding: .2em 0 0.2em 0.2em;
+	display: block;
+	text-decoration: none;
+	background: #F4F4F4;
+}
+
+
+ h1 strong  { 
+	text-decoration: underline;
+}
+
+
+/****************************************/
+/* 4 SELECTORES PSEUDO-CLASES*/
+
+li a:hover    {
+	background: rgb(255, 177, 7);
+}
+li a:active   {
+	background: rgb(0, 0, 0);
+}
+
+li a:visited {	
+	color:black;
+}
+*/
+
+/****************************************/
+/* 5 SELECTORES DE CLASE */
+
+.parrafoEspecial{
+	background: #DD44DD; 
+	color: #FFCC99; 
+}
+
+ 
+.textoDestacado 	{
+	font-weight: bold;
+	font-variant: small-caps;
+	font-style: oblique;
+}
+
+
+.piePagina{
+	background: #2570BA; 
+	color: #FFCC99; 
+	text-align:center;
+	border: solid #9999FF 3px;
+	
+}
+
+
+
+
+/****************************************/
+/* 6 SELECTORES DE ID - ÚNICO */
+#autorPagina 	{
+	color: white; 
+	font-weight: bold;
+	 background-color: gray;
+}
+*/
