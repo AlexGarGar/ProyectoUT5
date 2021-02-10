@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
     <title>PlayViciones</title>
     <link rel="stylesheet" type="text/css" href="css/estiloViciones.css">
+
 </head>
-<html>
-<body>
+<body {width: 100%;} #container{width: 80%;}>
+
     <img src="imagenes/LogoViciones.png" alt="" class="imagencentrada">
     <h1 class="h1Titulo">Bienvenido a PlayVicios</h1>
     <p class="textoPrincipal"><em><strong> Un sitio web, en el cual podrás encontrar los últimos juegos y las últimas noticias relacionadas con todo el mundo Gamer, dentro de Playstation. Juegos, últimas novedades, nuevos accesorios, así como reviews de nuestros expertos. Adentrate en nuestro mundo y visita todas nuestras categorías... ¡Te Sorprenderas!</strong></em></p> <br> <br> <br>
@@ -20,11 +21,11 @@
 </form> <br> <br> <br> <br> <br>
     <ul class="listaCat">
         <h2 class="h2cat">Categorías</h2>
-        <a href="noticias.html" target="_blank"><li>Noticias</li></a>
-        <a href="ps4.html" target="_blank"><li>Playstation 4</li></a>
-        <a href="ps5.html" target="_blank"><li>Playstation 5</li></a>
-        <a href="contactanos.html" target="_blank"><li>Contactanos</li></a>
-        <a href="xboxsx.html" target="_blank"><li>XBOX Serie X</li></a>
+        <a href="noticias.html" target="_blank"><button type="button" class="btn btn-primary"><li>Noticias</li></button></a>
+        <a href="ps4.html" target="_blank"><button type="button" class="btn btn-primary"><li>Playstation 4</li></button></a>
+        <a href="ps5.html" target="_blank"><button type="button" class="btn btn-primary"><li>Playstation 5</li></button></a>
+        <a href="contactanos.html" target="_blank"><button type="button" class="btn btn-primary"><li>Contactanos</li></button></a>
+        <a href="xboxsx.html" target="_blank"><button type="button" class="btn btn-primary"><li>XBOX Serie X</li></button></a>
     </ul>
 
 <h2 class="h2cat"><em>PRESENTACIÓN DE LA NUEVA PLAYSTATION 5</em></h2> 
@@ -40,7 +41,7 @@
         <input type="checkbox" name="PS4" id="PS4"><li>Playstation 4</li> 
         <input type="checkbox" name="PS5" id="PS5"><li> Playstation 5</li> 
         <input type="checkbox" name="XBOX One" id="XBOX One"><li> XBOX One</li> 
-        <input type="checkbox" name="XBOX S" id="XBOX S"><li> XBOX S</li> 
+        <input type="checkbox" name="XBOX S" id="XBOX S"><li> XBOX X</li> 
         <br> <br>
         Categoría del Videojuego: <select name="categoria" id="categoria">
             <option value="Accion">Acción </option>
@@ -55,9 +56,30 @@
         <input type="radio" name="decision" value="No">No <br> <br>
     <input type="submit" value="Enviar">
     <input type="reset" value="Resetear">
+    </form>
+    <h2 class="h2cat">Últimas Noticias</h2><br>
+
+    <h3 id="hechopor" style="display:none" class="">Realizado por: Alejandro García García, Alexander Tache y Alvaro Lopez- 1ºSMR</h3>
+    <button type="button" onclick="mostrarOcultar();">Mostrar/Ocultar</button>
+
+    <script>
+        function mostrarOcultar(){
+            //hacer si esta visible//
+            if(document.getElementById('hechopor').style.display == "block"){
+             document.getElementById('hechopor').style.display= "none";
+        }
+            //hacer si esta oculto//
+            else{ 
+            document.getElementById('hechopor').style.display = "block";
+
+        }
+    }
+    </script>
 
     
-        
+</div>
+</div>
+</div>        
 
     </form>
 
