@@ -2,86 +2,210 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
-    <title>PlayViciones</title>
-    <link rel="stylesheet" type="text/css" href="css/estiloViciones.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicio Consolas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 </head>
-<body {width: 100%;} #container{width: 80%;}>
-
-    <img src="imagenes/LogoViciones.png" alt="" class="imagencentrada">
-    <h1 class="h1Titulo">Bienvenido a PlayVicios</h1>
-    <p class="textoPrincipal"><em><strong> Un sitio web, en el cual podrás encontrar los últimos juegos y las últimas noticias relacionadas con todo el mundo Gamer, dentro de Playstation. Juegos, últimas novedades, nuevos accesorios, así como reviews de nuestros expertos. Adentrate en nuestro mundo y visita todas nuestras categorías... ¡Te Sorprenderas!</strong></em></p> <br> <br> <br>
-<form action="" method="post" class="formularioLogIn">
-    <h2 class="h2cat">Log In del Usuario</h2>
-    Nombre de Usuario: <input type="text" name="Usuario" id="Usuario"> <br>
-    Contraseña: <input type="password" name="Clave" id="Clave"> <br> <br>
-    <input type="submit" value="Log In">
-    <input type="reset" value="Resetear">
-</form> <br> <br> <br> <br> <br>
-    <ul class="listaCat">
-        <h2 class="h2cat">Categorías</h2>
-        <a href="noticias.html" target="_blank"><button type="button" class="btn btn-primary"><li>Noticias</li></button></a>
-        <a href="ps4.html" target="_blank"><button type="button" class="btn btn-primary"><li>Playstation 4</li></button></a>
-        <a href="ps5.html" target="_blank"><button type="button" class="btn btn-primary"><li>Playstation 5</li></button></a>
-        <a href="contactanos.html" target="_blank"><button type="button" class="btn btn-primary"><li>Contactanos</li></button></a>
-        <a href="xboxsx.html" target="_blank"><button type="button" class="btn btn-primary"><li>XBOX Serie X</li></button></a>
-    </ul>
-
-<h2 class="h2cat"><em>PRESENTACIÓN DE LA NUEVA PLAYSTATION 5</em></h2> 
-<video width="320" height="240" controls>
-<source src="imagenes/PS5+Hardware+Reveal+Trailer.mp4" type="video/mp4">
-</video>
-
-    <form action="" method="post" class="formuJuego">
-        <h2 class="h2cat">Últimos lanzamientos de Videojuegos</h2> <br> <br> <br> <br> <br>
-        Nombre del videojuego: <input type="text" name="Videojuego" id="Videojuego"> <br> <br>
-        Fecha de lanzamiento: <input type="date" name="Fecha" id="Fecha"> <br> <br>
-        Tipo de plataforma: <br> <br> 
-        <input type="checkbox" name="PS4" id="PS4"><li>Playstation 4</li> 
-        <input type="checkbox" name="PS5" id="PS5"><li> Playstation 5</li> 
-        <input type="checkbox" name="XBOX One" id="XBOX One"><li> XBOX One</li> 
-        <input type="checkbox" name="XBOX S" id="XBOX S"><li> XBOX X</li> 
-        <br> <br>
-        Categoría del Videojuego: <select name="categoria" id="categoria">
-            <option value="Accion">Acción </option>
-            <option value="Deportes">Deportes </option>
-            <option value="Fantasia">Fantasia </option>
-            <option value="Simulacion">Simulación </option>
-            <option value="MMO-RPG">MMO-RPG </option>
-            <option value="Historico">Historico </option> </select>
-            <br> <br>
-        ¿Estará Disponible para PC?
-        <input type="radio" name="decision" value="Si" checked="checked">Si
-        <input type="radio" name="decision" value="No">No <br> <br>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Resetear">
-    </form>
-    <h2 class="h2cat">Últimas Noticias</h2><br>
-
-    <h3 id="hechopor" style="display:none" class="">Realizado por: Alejandro García García, Alexander Tache y Alvaro Lopez- 1ºSMR</h3>
-    <button type="button" onclick="mostrarOcultar();">Mostrar/Ocultar</button>
-
-    <script>
-        function mostrarOcultar(){
-            //hacer si esta visible//
-            if(document.getElementById('hechopor').style.display == "block"){
-             document.getElementById('hechopor').style.display= "none";
-        }
-            //hacer si esta oculto//
-            else{ 
-            document.getElementById('hechopor').style.display = "block";
-
-        }
-    }
-    </script>
-
-    
+<body>
+<div class="container">
+  <img src="imagenes/VicioConsolasPortada.png" alt="Coche" style="width:50%" class="mx-auto d-block"> 
 </div>
-</div>
-</div>        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Principal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html" target="_blank">Curiosidades <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curiosidades.html" target="_blank">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="juegosretro.html" target="_blank">Juegos Retro</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="playstation.html" target="_blank">PlayStation</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html" target="_blank">Contactanos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col">     
+            </div>
+        </div>
+        <div class="container">
+          <h1 class="text-center"><em>Vicio Consolas</em></h1>
+        </div>
+        
+    <div class="alert alert-info" role="alert">
+        <h4 class="alert-heading">Introducción</h4>
+        <p>Un sitio web, en el cual podrás encontrar los últimos juegos y las últimas noticias relacionadas con todo el mundo Gamer, dentro de Playstation. Juegos, últimas novedades, nuevos accesorios, juegos retro y curiosidades. Adentrate en nuestro mundo y visita todas nuestras categorías... ¡Te Sorprenderas!</p>
+        </div>
+        <form class="form-inline">
+            <div class="form-group mb-2">
+              <label for="inputEmail4" class="sr-only">Email</label>
+              <input type="text" class="form-control" id="inputEmail4" value="tuemail@ejemplo.com">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">Password</label>
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Identificate</button>
+          </form> <br> <br>
+          <h3 class="text-center"><strong><em> Últimos Lanzamientos</em></strong></h3>
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/Farcry6.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Far Cry 6</h5>
+                  <p>Nueva entrega de FarCry, lanzamiento el 30 de Abril de 2021</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/AssasinsCreed.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Assasins Creed Valhalla</h5>
+                  <p>Último lanzamiento de la saga Assasins Creed</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/nba2k21.jpeg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>NBA 2K21</h5>
+                  <p>Mejor juego de simulación de baloncesto.</p>
+                </div>
+              </div>
+            </div> <br> <br>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="col">
+                  <div class="card" style="width: 14rem;">
+                      <img class="card-img-top" src="imagenes/curiosidades.jpg" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title">Curiosidades</h5>
+                          <p class="card-text"> La Nintendo 64 tuvo 3 nombres, a forma de Pac-Man está inspirada en una Pizza con un trozo faltante, esto y mucho más, en curiosidades</p>
+                          <a href="curiosidades.html" class="btn btn-primary">¡A Curiosidades!</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" style="width: 14rem;">
+                      <img class="card-img-top" src="imagenes/curiosidadesplay.jpg" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title">PlayStation</h5>
+                          <p class="card-text">La PlayStation se pensó que fuese una Nintendo, pero esta idea no llego a buen puerto, al principio fue un proyecto de Nintendo y Sony...</p>
+                          <a href="playstation.html" class="btn btn-primary">¡A PlayStation!</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" style="width: 14rem;">
+                      <img class="card-img-top" src="imagenes/curiosidadesretro.jpg" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title">Juegos Retro</h5>
+                          <p class="card-text">¿Cuál fue la primera consola pórtatil? ¿Cuál fue la primera en incluir el modo para 2 jugadores? ¿En que año ocurrió todo esto?</p>
+                          <a href="juegosretro.html" class="btn btn-primary">¡A Juegos Retro!</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card" style="width: 14rem;">
+                      <img class="card-img-top" src="imagenes/noticias.jpg" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title">Noticias</h5>
+                          <p class="card-text">¿Quieres estar al tanto de todas las novedades sobre el mundo Gamer? No te pierdas nuestra sección sobre noticias y mucho más...</p>
+                          <a href="noticias.html" class="btn btn-primary">¡A Noticias!</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> <br> <br>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <form>
+            <h3 class="text-center"><em><strong>Queremos saber tus gustos</strong></em></h3>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                
+                <label for="inputEmail4">Nombre/Apodo</label>
+                <input type="text" class="form-control" id="">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" id="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">E-Mail</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="tuemail@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">¿Qué te gusta más del mundo gamer?</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Streamers, juegos, curiosidades...">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">¿Que juego es tu favorito?</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Que plataforma usas</label>
+                <select id="inputState" class="form-control">
+                  <option selected>PlayStation 5</option>
+                  <option>PC</option>
+                  <option>Playstation 4</option>
+                  <option>XBOX</option>
+                  <option>Nintendo Switch</option>
+                  <option>Otro...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">¿Cuantas horas dedicas a jugar?</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form> <br> <br>
+          
+
+
+
+
+
+
+
 
 </body>
 </html>
